@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.nav a{
+			color: red;
+		}
+		div>strong {
+			color: pink;
+		}
+		/*交集选择器*/
+		p.red {
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="nav">
+		<a href="">内部链接</a>
+		<a href="">内部链接</a>
+		<a href="">内部链接</a>
+	</div>
+	<a href="">外部链接</a>
+	<a href="">外部链接</a>
+	<a href="">外部链接</a>
+	<div>
+		<strong>儿子</strong>
+		<strong>儿子</strong>
+		<strong>儿子</strong>
+	</div>
+	<div>
+		<p>
+			<strong>孙子</strong>
+			<strong>孙子</strong>
+			<strong>孙子</strong>
+		</p>
+	</div>
+	<!-- 交集选择器 -->
+	<p class="red">红色</p>
+	<p class="red">红色</p>
+	<p class="red">红色</p>
+	<div class="red">红色</div>
+	<div class="red">红色</div>
+	<div class="red">红色</div>
+	<p>蓝色</p>
+	<p>蓝色</p>
+	<p>蓝色</p>
+
+</body>
+</body>
+</body>
+</html>

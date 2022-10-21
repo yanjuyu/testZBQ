@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<style>
+		h3 {
+			color: green;
+		}
+		h2 {
+			color: purple;
+			font-family: "宋体"
+		}
+		a:visited {
+			color: orange;
+		}
+		table {
+			border: 1px solid pink;
+		}
+		.hotpink {
+			background-color: hotpink;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>测试</h1>
+	<a href="#1">第一个</a>
+	<h2>第二个</h2>
+	<a href="#2">列表</a><br/>
+	<a href="#3">表单</a><br/>
+	<a href="#4">CSS</a><br/>
+	<hr />
+	<img src="../images/1607317845318.jpeg" title="hhh" width="300">
+	<br/><br/>
+	
+	<br/><br/><br/>
+	<table width="500" height="200" align="center" cellspacing="0" cellpadding="10" border="1">
+		<caption><h3>表格</h3></caption>
+		<thead>
+			<tr class="hotpink">
+				<th>第一</th>
+				<th>第二</th>
+				<th>第三</th>
+				<th>第四</th>
+				<th>第五</th>
+
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td rowspan="2">3</td>
+				<td>
+					<a href="#">百度</a>
+					<a href="#">微博</a>
+					<a href="#">贴吧</a>
+			</td>
+		</tr>	
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<!-- <td>3</td> 多余的单元格-->
+			<td>
+				<a href="#">百度</a>
+				<a href="#">微博</a>
+				<a href="#">贴吧</a>
+			</td>
+		</tr>	
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>3</td>
+			<td>
+				<a href="#">百度</a>
+				<a href="#">微博</a>
+				<a href="#">贴吧</a>
+			</td>
+		</tr>
+			
+
+			<tr>
+				<td colspan="4">1</td>
+				<!-- <td>2</td>
+				<td>3</td>
+				<td>3</td> -->
+				<td>
+					<a href="#">百度</a>
+					<a href="#">微博</a>
+					<a href="#">贴吧</a>
+				</td>
+			</tr>
+		</tbody>
+
+	</table>
+	<h3 id="1">第一个相关内容</h3>
+	<p>第二个相关内容</p>
+	<a href="https://www.baidu.com/index.php?tn=monline_3_dg">百度</a><br />
+	<a href="t1.html" target="_blank" >跳转</a><br />
+
+	<h2 id="2">列表</h2>
+	<h3>无序列表</h3>
+	<ul>
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+	</ul>
+	<h3>有序列表</h3>
+	<ol>
+		<li>1</li>
+		<li>1</li>
+		<li>1</li>
+		<li>1</li>
+		<li>1</li>
+	</ol>
+	<h3>自定义列表</h3>
+	<dl>
+		<dt>111</dt>
+		<dd>222</dd>
+		<dd>222</dd>
+	</dl>
+	<h2 id="3">表单</h2>
+	用户名：<input type="text" value="请输入"><br>
+	昵称：<input type="text" value=""><br>
+	密码：<input type="password" name="pwd"><br>
+	性别：男<input type="radio" name="sex">女<input type="radio" name="sex"><br>
+	复选按钮：
+			1<input type="checkbox" name="f" checked="checked">
+			2<input type="checkbox" name="f">
+			3<input type="checkbox" name="f"><br>
+	button按钮:<input type="button" name="" value="点击"><br>
+	submit按钮：<input type="submit" name=""><br>
+	图片按钮：<input type="image" name="" src="../images/index.png"><br>
+	文件域：<input type="file" name=""><br>
+	label标签
+		第一种：<label>点击<input type="text" name=""></label><br>
+		第二种：<label for="b">点击</label><input type="text" id="b"><br>
+	文本域：<textarea></textarea><br>
+	下拉列表：<select>
+				<option>--请选择--</option>
+				<option>1</option>
+				<option>2</option>
+				<option selected="selected">3</option>
+				<option>4</option>
+				<option>5</option>
+			</select><br>
+	<h3>表单域：</h3>
+		<form>
+			用户名：<input type="text" value="请输入"><br>
+			昵称：<input type="text" value=""><br>
+			密码：<input type="password" name="pwd"><br>
+			性别：男<input type="radio" name="sex">女<input type="radio" name="sex"><br>
+			复选按钮：
+					1<input type="checkbox" name="f" checked="checked">
+					2<input type="checkbox" name="f">
+					3<input type="checkbox" name="f"><br>
+			button按钮:<input type="button" name="" value="点击"><br>
+			图片按钮：<input type="image" name="" src="../images/index.png"><br>
+			文件域：<input type="file" name=""><br>
+			label标签
+				第一种：<label>点击<input type="text" name=""></label><br>
+				第二种：<label for="b">点击</label><input type="text" id="b"><br>
+			文本域：<textarea></textarea><br>
+			下拉列表：<select>
+						<option>--请选择--</option>
+						<option>1</option>
+						<option>2</option>
+						<option selected="selected">3</option>
+						<option>4</option>
+						<option>5</option>
+					</select><br>
+			submit按钮：<input type="submit" name=""><br>
+			重置按钮：<input type="reset" name=""><br>
+		</form>
+		<h2 id="4">CSS</h2>
+		<h1 style="color: pink;font-size: 38px;">CSS样式</h1>
+		类选择器：
+				<span class="blue font100">G</span>
+				<span class="red font100" >o</span>
+				<span class="yellow font100">o</span>
+				<span class="blue font100">g</span>
+				<span class="green font100">l</span>
+				<span class="red font100">e</span>
+
+</body>
+</html>

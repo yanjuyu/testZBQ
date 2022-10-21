@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="nt">nt</button>
+    <button id="xm">xm</button><br>
+    <img src="../images/nt.webp" alt="" title="男头">
+    <script>
+        var nt = document.getElementById('nt');
+        var xm = document.getElementById('xm');
+        var img = document.querySelector('img');
+        xm.onclick = function() {
+            img.src = '../images/xm.webp';
+            img.title = '男头';
+        }
+        nt.onclick = function() {
+            img.src = '../images/nt.webp';
+            img.title = '小猫';
+        }
+    </script>
+</body>
+
+</html>

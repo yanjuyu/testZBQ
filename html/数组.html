@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var arr = [1, 2, 3, 4];
+        var sum = 0;
+        for (i = 0; i < arr.length; i++) {
+            sum += arr[i];
+        }
+        var average = sum / arr.length;
+        console.log(sum, average);
+        //0
+        var arr1 = [0, 2, 44, 0, 55, 1];
+        var new1 = [];
+        for (var i = 0; i < arr1.length; i++) {
+            if (arr1[i] != 0) {
+                new1[new1.length] = arr1[i];
+            }
+        }
+        console.log(new1);
+        //翻转
+        var arr2 = [1, 2, 3, 4, 5];
+        var new2 = [];
+        for (var j = arr2.length - 1; j >= 0; j--) {
+            new2[new2.length] = arr2[j];
+        }
+        console.log(new2);
+        //冒泡排序
+        var arr = [5, 4, 3, 2, 1];
+        for (i = 0; i <= arr.length - 1; i++) {
+            for (j = 0; j <= arr.length - i - 1; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    var temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
+        }
+        console.log(arr);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
